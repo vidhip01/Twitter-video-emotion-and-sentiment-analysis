@@ -27,7 +27,7 @@ def extract_feature(file_name, mfcc, chroma, mel):
             result=np.hstack((result, mel))
     return result
 
-#main function to predict the emotion
+#Main function to predict the emotions
 def get_speech_emotion():
     Pkl_Filename = "./data/speech/Emotion_Voice_Detection_Model.pkl"  
     with open(Pkl_Filename, 'rb') as file:  
